@@ -1,0 +1,28 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb/hooks"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+       
+        "linebreak-style": 0,
+        "no-unused-vars": 0,
+        "import/prefer-default-export": 0,
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/button-has-type": 0,
+        "react/jsx-props-no-spreading": 0
+    },
+    "settings": {
+        "import/ignore": "node_modules"
+    }
+}

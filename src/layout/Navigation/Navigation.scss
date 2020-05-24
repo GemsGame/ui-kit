@@ -1,0 +1,25 @@
+.navigation {
+  background-color: #18a0fb;
+  padding:1rem;
+}
+
+.navigation__list {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start:0;
+}
+
+.navigation__li {
+  padding-right: 1rem;
+}
+
+.navigation__li a {
+  color:white;
+  text-decoration: none;
+}
+
+.navigation__li a:active, .navigation__li a:hover, .navigation__li a:focus {
+  color:rgb(236, 236, 236);
+  text-decoration: none;
+}
+
