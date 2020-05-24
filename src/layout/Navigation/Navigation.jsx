@@ -5,7 +5,7 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import SandboxButton from '../../components/Button/SandboxButton';
+import ButtonCases from '../../components/Button/ButtonCases';
 import './Navigation.scss';
 import Main from '../Main/Main';
 
@@ -22,10 +22,10 @@ const Navigation = (props) => (
     </div>
     <Switch>
       <Route path="/ui-kit">
-        <Main><SandboxButton /></Main>
+        <Main><ButtonCases /></Main>
       </Route>
       <Route path="/ui-kit/button">
-        <Main><SandboxButton /></Main>
+        <Main><ButtonCases /></Main>
       </Route>
     </Switch>
   </Router>
