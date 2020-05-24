@@ -5,7 +5,7 @@ import './Button.scss';
 const Button = ({
   children, type, className, disabled, active, onClick, icon = {}, ...args
 }) => (
-  <button type={type} className={className} onClick={onClick} disabled={disabled} {...args}>
+  <button type={type} className={className} active={active} onClick={onClick} disabled={disabled} {...args}>
     {children}
     {icon}
   </button>

@@ -17,7 +17,10 @@ const SandboxButton = (props) => (
       <h2 className="buttons-block__header"><span>3. Primary small. Disabled:</span></h2>
       <Button className="btn-primary btn-primary_small" onClick={() => console.log('disabled')} disabled>Download</Button>
     </div>
-
+    <div className="buttons-block__element">
+      <h2 className="buttons-block__header"><span>4. Primary small. Active:</span></h2>
+      <Button className="btn-primary btn-primary_small" active>Download</Button>
+    </div>
 
   </div>
 );
