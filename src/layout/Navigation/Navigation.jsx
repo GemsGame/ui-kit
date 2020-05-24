@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import ButtonCases from '../../components/Button/ButtonCases';
 import './Navigation.scss';
-import Main from '../Main/Main';
+
 
 const Navigation = (props) => (
   <Router>
@@ -22,10 +22,10 @@ const Navigation = (props) => (
     </div>
     <Switch>
       <Route path="/ui-kit">
-        <Main><ButtonCases /></Main>
+        <ButtonCases />
       </Route>
       <Route path="/ui-kit/button">
-        <Main><ButtonCases /></Main>
+        <ButtonCases />
       </Route>
     </Switch>
   </Router>
