@@ -21,7 +21,15 @@ const SandboxButton = (props) => (
       <h2 className="buttons-block__header"><span>4. Primary small. Active:</span></h2>
       <Button className="btn-primary btn-primary_small" active>Download</Button>
     </div>
-
+    <div className="buttons-block__element">
+      <h2 className="buttons-block__header"><span>5. Primary small. Type submit:</span></h2>
+      <Button className="btn-primary btn-primary_small" type="submit">Download</Button>
+    </div>
+    <div className="buttons-block__element">
+      <h2 className="buttons-block__header"><span>6. Primary small. href link:</span></h2>
+      <Button className="btn-primary btn-primary_small" href="#test" type="link">link</Button>
+      <Button className="btn-primary btn-primary_small disabled" href="#test" type="link" disabled>link</Button>
+    </div>
   </div>
 );
 

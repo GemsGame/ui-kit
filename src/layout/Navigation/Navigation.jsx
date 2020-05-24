@@ -21,6 +21,9 @@ const Navigation = (props) => (
       </div>
     </div>
     <Switch>
+      <Route path="/ui-kit">
+        <Main><SandboxButton /></Main>
+      </Route>
       <Route path="/ui-kit/button">
         <Main><SandboxButton /></Main>
       </Route>

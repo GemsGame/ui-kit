@@ -7,6 +7,10 @@
   line-height: 16px;
   text-align: center;
 }
+
+.btn-primary:focus, .btn-primary:active  {
+  outline: none;
+}
 .btn-primary_small {
   padding: 10px 12px;
   border: 0;
@@ -23,6 +27,14 @@
   background-color: #E0E0E0;
   cursor: not-allowed;
 }
+a.btn-primary{
+  text-decoration: none;
+}
+.disabled {
+  background-color: #E0E0E0;
+  cursor: not-allowed;
+}
+
 .btn-primary:active {
   background: #0489e2;
 }

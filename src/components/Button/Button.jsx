@@ -3,13 +3,22 @@ import PropTypes from 'prop-types';
 import './Button.scss';
 
 const Button = ({
-  children, type, className, disabled, active, onClick, icon = {}, ...args
-}) => (
-  <button type={type} className={className} active={active} onClick={onClick} disabled={disabled} {...args}>
-    {children}
-    {icon}
-  </button>
-);
+  children, type, className, disabled, active, onClick, icon, ...args
+}) => {
+  const Tag = args.href ? 'a' : 'button';
+  const onClickAction = (e) => {
+    if (disabled) {
+      return e.preventDefault();
+    }
+    return onClick(e);
+  };
+  return (
+    <Tag type={type} className={className} active={active} onClick={onClickAction} disabled={disabled} {...args}>
+      {children}
+      {icon}
+    </Tag>
+  );
+};
 
 Button.propTypes = {
   children: PropTypes.string,
@@ -18,7 +27,7 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   active: PropTypes.bool,
   onClick: PropTypes.func,
-  icon: PropTypes.any
+  icon: PropTypes.any,
 };
 Button.defaultProps = {
   children: 'primary',
