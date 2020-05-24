@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import './Button.scss';
 
 const Button = ({
-  children, type, className, disabled, active, onClick, icon, ...args
+  children, type, className, disabled, onClick, icon, ...args
 }) => {
   const Tag = args.href ? 'a' : 'button';
+  const active = args.active ? 'active' : null;
+
   const onClickAction = (e) => {
     if (disabled) {
       return e.preventDefault();
@@ -13,7 +15,7 @@ const Button = ({
     return onClick(e);
   };
   return (
-    <Tag type={type} className={className} active={active} onClick={onClickAction} disabled={disabled} {...args}>
+    <Tag type={type} className={`${className} ${active}`} onClick={onClickAction} disabled={disabled} {...args}>
       {children}
       {icon}
     </Tag>
