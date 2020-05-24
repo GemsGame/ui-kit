@@ -14,14 +14,14 @@ const Navigation = (props) => (
     <div className="navigation">
       <div className="navigation__wrapper">
         <ul className="navigation__list">
-          <li className="navigation__li"><Link to="/button">Button</Link></li>
+          <li className="navigation__li"><Link to="/ui-kit/button">Button</Link></li>
           <li className="navigation__li"><Link to="/">Input</Link></li>
           <li className="navigation__li"><Link to="/button">Toggle</Link></li>
         </ul>
       </div>
     </div>
     <Switch>
-      <Route path="/button">
+      <Route path="/ui-kit/button">
         <Main><SandboxButton /></Main>
       </Route>
     </Switch>
